@@ -1,7 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {PerfectScrollbarConfigInterface} from 'ngx-perfect-scrollbar';
 import {AppSettings} from '../../../app.settings';
-import {Settings} from '../../../app.settings.model';
+import {Settings} from '../../../models/app.settings.model';
 import {MenuService} from '../menu/menu.service';
 
 @Component({

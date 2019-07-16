@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {AppSettings} from '../../../app.settings';
-import {Settings} from '../../../app.settings.model';
+import {Settings} from '../../../models/app.settings.model';
 
 @Component({
     selector: 'app-flags-menu',

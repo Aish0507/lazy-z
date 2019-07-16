@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router, ActivatedRouteSnapshot, UrlSegment, NavigationEnd } from "@angular/router"; 
 import { Title } from '@angular/platform-browser';
 import { AppSettings } from '../../app.settings';
-import { Settings } from '../../app.settings.model';
+import { Settings } from '../../models/app.settings.model';
 import { MenuService } from '../../core/components/menu/menu.service';
 
 @Component({

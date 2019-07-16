@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {Injector, NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {OverlayContainer} from '@angular/cdk/overlay';
@@ -29,6 +29,7 @@ import {SidenavComponent} from './core/components/sidenav/sidenav.component';
 import {VerticalMenuComponent} from './core/components/menu/vertical-menu/vertical-menu.component';
 import {FlagsMenuComponent} from './core/components/flags-menu/flags-menu.component';
 import {FavoritesComponent} from './core/components/favorites/favorites.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {FavoritesComponent} from './core/components/favorites/favorites.componen
         PerfectScrollbarModule,
         SharedModule,
         PipesModule,
-        routing
+        routing,
+        HttpClientModule
     ],
     declarations: [
         AppComponent,
@@ -64,4 +66,8 @@ import {FavoritesComponent} from './core/components/favorites/favorites.componen
     ]
 })
 export class AppModule {
+    constructor(injector: Injector) {
+        AppInjector = injector;
+    }
 }
+export let AppInjector: Injector;

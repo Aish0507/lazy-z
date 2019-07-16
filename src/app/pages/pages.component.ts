@@ -2,7 +2,7 @@ import {Component, OnInit, ViewChild, HostListener, ViewChildren, QueryList} fro
 import {Router, NavigationEnd} from '@angular/router';
 import {PerfectScrollbarDirective, PerfectScrollbarConfigInterface} from 'ngx-perfect-scrollbar';
 import {AppSettings} from '../app.settings';
-import {Settings} from '../app.settings.model';
+import {Settings} from '../models/app.settings.model';
 import {rotate} from '../core/utils/app-animation';
 import {MenuService} from '../core/components/menu/menu.service';
 

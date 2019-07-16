@@ -1,6 +1,6 @@
 import {Component, OnInit, Input, ViewEncapsulation} from '@angular/core';
 import {AppSettings} from '../../../../app.settings';
-import {Settings} from '../../../../app.settings.model';
+import {Settings} from '../../../../models/app.settings.model';
 import {MenuService} from '../menu.service';
 
 @Component({
