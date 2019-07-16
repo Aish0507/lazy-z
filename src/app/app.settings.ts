@@ -14,7 +14,7 @@ export class AppSettings {
         true,
         'vertical',
         'default',
-        'green-dark',   //indigo-light, teal-light, red-light, gray-light, blue-dark, green-dark, pink-dark, gray-dark
+        'blue-dark',
         false
     )
 }
