@@ -1,0 +1,19 @@
+<div fxLayout="row wrap" fxLayoutAlign="space-between center" class="info-content has-bg-image"
+     [class.show]="showInfoContent">
+    <button mat-mini-fab color="warn" class="close-btn" (click)="closeInfoContent(showInfoContent)">
+        <mat-icon>close</mat-icon>
+    </button>
+    <div fxFlex="100" fxFlex.gt-sm="40" class="py-3 col">
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <div class="user-details px-4">
+                Content here
+            </div>
+        </div>
+    </div>
+    <div fxFlex="100" fxFlex.gt-sm="35" fxFlex.sm="50" ngClass.xs="pb-4" class="top-contact-form col">
+        Another Content here
+    </div>
+    <div fxFlex="50" fxFlex.gt-sm="25" fxShow="false" fxShow.gt-xs class="py-3 col">
+        Some another value
+    </div>
+</div>
